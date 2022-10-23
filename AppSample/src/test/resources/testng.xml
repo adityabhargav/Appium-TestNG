@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DEMO App" verbose="2" parallel="tests" thread-count="1">
+    <test name="Sample App Run">
+        <parameter name="appiumPort" value="4723"/>
+        <parameter name="webdriverAgentPort" value="13000"/>
+        <parameter name="udid" value="ce10182ae88f720604"/>
+        <parameter name="platform" value="Android"/>
+        <parameter name="localExecution" value="false"/>
+        <parameter name="deviceName" value="Samsung S8"/>
+        <classes>
+            <class name="Tests.SampleTest">
+            </class>
+        </classes>
+    </test>
+</suite>
